@@ -41,11 +41,11 @@ function Form() {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("avatar", formData.avatar);
   
-    const url = `http://localhost:5000/api/users`;
+    const url = `https://team-builder.onrender.com/api/users`;
     try {
       const response = await fetch(url, {
         method: 'POST',
-        body: formDataToSend, // Send the FormData directly as the body
+        body: formDataToSend, 
       });
   
       if (!response.ok) {

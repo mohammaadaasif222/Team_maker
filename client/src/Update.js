@@ -74,7 +74,7 @@ function Update() {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("avatar", formData.avatar);
 
-    const url = `http://localhost:5000/api/users/${_id}`;
+    const url = `https://team-builder.onrender.com/api/users/${_id}`;
     try {
       const response = await fetch(url, {
         method: "PUT",
